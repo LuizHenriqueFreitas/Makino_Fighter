@@ -1,7 +1,7 @@
 #include "raylib.h"
 #include <iostream>
 #include "MAKINO.H"
-#include <enemyManager.cpp>
+#include "EnemyManager.h"
 
 Makino makino;
 
@@ -33,7 +33,9 @@ int main()
 
     while(WindowShouldClose() == false)
     {
+        //atualiza posição do makino em tempo real
         Vector2 makinoPos = {makino.x, makino.y};
+
         makino.Update(makinoStop, makinoJab);
         manager.UpdateALL(makinoPos);
 

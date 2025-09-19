@@ -1,3 +1,6 @@
+#ifndef __EnemyManager_H
+#define __EnemyManager_H
+
 #include <vector>
 #include "raylib.h"
 #include "ENEMY.h"
@@ -36,3 +39,5 @@ class EnemyManager{
             }
         }
 };
+
+#endif //__EnemyManager_H

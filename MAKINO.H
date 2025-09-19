@@ -2,7 +2,7 @@
 #define __MAKINO_H
 
 #include <string>
-#include <raylib.h>
+#include "raylib.h"
 #include <cmath>
 
 //verifica movimentação do player nos eixos verticais
