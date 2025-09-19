@@ -14,11 +14,11 @@ class EnemyManager{
             enemies.resize(maxEnemies);
         }
 
-        void SpawnEnemies(int count, int screenWidth, int screenHeight)
+        void SpawnEnemies(Texture2D sprites,int count, int screenWidth, int screenHeight)
         {
             for (int i = 0; i < count && i < (int)enemies.size(); i++)
             {
-                enemies[i].Spawn(screenWidth, screenHeight);
+                enemies[i].Spawn(screenWidth, screenHeight, sprites);
             }
             
         }
